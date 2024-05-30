@@ -25,7 +25,7 @@ try {
 app.get('/', (req, res) => {
   res.status(200).json({
     success: true,
-    message: 'Welcome to URL Poke Discord Bot'
+    message: 'Welcome to Poke Discord Bot'
   });
 });
 
@@ -42,7 +42,7 @@ const refreshServer = async () => {
     const url = process.env.SERVER_URL;
     const response = await fetch(`${url}/api/refresh`);
     const data = await response.json();
-    console.log('Server refreshed:', data);
+    logger.info('Server refreshed:', data);
   } catch (error) {
     console.error('Error refreshing server:', error);
   }
