@@ -25,7 +25,7 @@ try {
 app.get('/', (req, res) => {
   res.status(200).json({
     success: true,
-    message: 'Welcome to URL Shortener API'
+    message: 'Welcome to URL Poke Discord Bot'
   });
 });
 
